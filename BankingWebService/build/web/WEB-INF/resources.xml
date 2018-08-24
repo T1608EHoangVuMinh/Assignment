@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <Resource id="banking" type="javax.sql.DataSource">#Thu Aug 23 13:30:33 ICT 2018
+jdbcDriver=com.mysql.jdbc.Driver
+password=123456
+userName=hoangminhk4b
+jdbcUrl=jdbc\:mysql\://13.251.8.179\:3306/BankingWebService?zeroDateTimeBehavior\=convertToNull&amp;useUnicode\=yes&amp;characterEncoding\=UTF-8&amp;useSSL\=false
+</Resource>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title">20sp</dimen>
+    <dimen name="paddingContain">5dp</dimen>
+    <dimen name="input_horizontal">10dp</dimen>
+    <dimen name="button">18sp</dimen>
+</resources>

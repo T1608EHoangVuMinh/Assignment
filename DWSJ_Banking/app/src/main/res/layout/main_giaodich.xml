@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundApp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/background_bank1"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/tvBanner"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="*** Giao dịch đơn hàng trực tuyến ***"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="#f20"
+            android:textStyle="bold"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit ="marquee_forever"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white"
+            android:padding="@dimen/paddingContain">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/title"
+                android:text="Đối tác"
+                android:textColor="@color/title"/>
+
+            <EditText
+                android:id="@+id/etMaDT"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mã đối tác"
+                android:drawableLeft="@drawable/ic_user_48"
+                android:drawablePadding="10dp"
+                android:maxLines="1"
+                android:layout_marginHorizontal="@dimen/input_horizontal"
+                />
+            <EditText
+                android:id="@+id/etMKDT"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Mật khẩu đối tác"
+                android:drawableLeft="@drawable/ic_pass"
+                android:drawablePadding="10dp"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:layout_marginHorizontal="@dimen/input_horizontal"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:padding="@dimen/paddingContain"
+            android:background="@android:color/white">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Khách hàng"
+                android:textColor="@color/title"
+                android:textSize="@dimen/title"/>
+            <EditText
+                android:id="@+id/etMaKH"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Mã khách hàng"
+                android:drawableLeft="@drawable/ic_user_48"
+                android:drawablePadding="10dp"
+                android:maxLines="1"
+                android:layout_marginHorizontal="@dimen/input_horizontal"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="@dimen/input_horizontal">
+                <EditText
+                    android:id="@+id/etMaTK"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="Mã số tài khoản"
+                    android:drawableLeft="@drawable/ic_pass"
+                    android:drawablePadding="10dp"
+                    android:layout_weight="7"
+                    android:maxLines="1"
+                    />
+                <EditText
+                    android:id="@+id/etMaPIN"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="Mã PIN"
+                    android:drawableLeft="@drawable/ic_pin"
+                    android:drawablePadding="10dp"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:layout_weight="3" />
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/etMoney"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Số tiền"
+                android:drawableLeft="@drawable/ic_money"
+                android:drawablePadding="10dp"
+                android:inputType="number"
+                android:maxLines="1"
+                android:layout_marginHorizontal="@dimen/input_horizontal"
+                />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:background="#bb000dff"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:textSize="@dimen/button"
+                android:id="@+id/btnReset"/>
+            <Button
+                android:id="@+id/btnTransfer"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chuyển tiền"
+                android:textAllCaps="false"
+                android:textSize="@dimen/button"
+                android:paddingHorizontal="20dp"
+                android:background="#f20"
+                android:textColor="@android:color/white"
+                android:shadowRadius="5"
+                />
+
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
